@@ -1,0 +1,235 @@
+.yral__homeBanner {
+    margin-top: 120px;
+    .slick-dots{
+        bottom: 20px;
+        li{
+            margin: 0;
+            button:before{
+                font-size: 15px;
+            }
+        }
+    }
+
+    .bannerItem {
+        background-color: #aecaa1;
+        border-radius: 30px;
+
+        .contents {
+            padding: 100px;
+            padding-right: 20px;
+
+            h1 {
+                font-weight: 600;
+                font-size: 50px;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            p {
+                margin: 15px 0;
+            }
+
+            .explore {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                padding-top: 20px;
+
+            }
+        }
+
+        .image {
+            text-align: right;
+            padding: 40px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.trending__products {
+    padding-bottom: 100px;
+    .trending {
+        background-color: var(--secondary-color);
+        padding: 30px;
+        border-radius: 30px;
+        position: relative;
+        overflow: hidden;
+        min-height: 344px;
+        h2{
+            color: #fff;
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 1;
+            padding: 20px;
+        }
+
+        img.main {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            position: absolute;
+            left: -90px;
+            bottom: -30px;
+        }
+        .more__products{
+            position: absolute;
+            right: 30px;
+            bottom: 20px;
+            transform: rotate(-45deg);
+            color: #fff;
+            z-index: 9;
+            
+            svg{
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+
+    .productGrid {
+        width: 100%;
+        padding: 15px;
+        border-radius: 30px;
+        border: 1px solid #fff;
+        transition: all 0.2s ease-in;
+        min-height: 344px;
+        .image{
+            overflow: hidden;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            img{
+                width: 100%;
+                height: 200px;
+                object-fit: contain;
+                background-color: #e3e3e3;
+                transition: all 0.3s ease-in;
+            }
+        }
+        &:hover{
+            border: 1px solid #e3e3e3;
+            cursor: pointer;
+            transition: all 0.2s ease-in;
+            h3{
+                color: var(--primary-color);
+                transition: all 0.2s ease-in;
+            }
+            .image{
+                img{
+                    transform: scale(1.1) rotate(1deg);
+                    transition: all 0.2s ease-in;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 14px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 0.2s ease-in;
+        }
+
+        .buy {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            justify-content: space-between;
+            padding: 0 5px;
+            p{
+                margin: 0;
+                font-size: 12px;
+                font-weight: 300;
+                color: #fff;
+                background: var(--secondary-color);
+                padding: 5px 16px;
+                border-radius: 100px;
+            }
+
+            .whatsapp {
+                background-color: transparent;
+                border: 1px solid #e3e3e3;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+                svg{
+                    background-color: transparent;
+                    width: 25px;
+                    height: 25px;
+                    margin: 0;
+                    color: var(--secondary-color);
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}
+
+.yral__about{
+    h2{
+        font-size: 45px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    h5{
+        font-size: 14px;
+        display: inline-block;
+        color: #fff;
+        padding: 6px 20px;
+        border-radius: 100px;    
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+}
+
+.ecofriendly__products{
+    background-color: #0d594d;
+    overflow: hidden;
+    position: relative;
+    img.bg{
+        position: absolute;
+        left: -20%;
+        bottom: 0;
+        width: 50%;
+        z-index: 0;
+        opacity: .2;
+    }
+    img.ekota-bg{
+        position: relative;
+        z-index: 9;
+    }
+    img.logo{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    .contents{
+        width: 90%;
+        margin: 0 auto;
+        h2{
+            color: #fff;
+            font-size: 50px;
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #fff;
+            font-weight: 300;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+    }
+}

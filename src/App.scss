@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #47a948;
+    --secondary-color: #00212e;
+    --font1: "Montserrat", sans-serif;
+    --font2: "Poppins", serif;
+}
+
+body {
+    font-family: var(--font2);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font1);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.gradient{
+    background: rgb(141, 197, 65);
+    background: linear-gradient(45deg, rgb(141, 197, 65) 0%, rgb(24, 157, 73) 99%);
+}
+
+.btn.btn-primary {
+    font-size: 14px;
+    text-transform: capitalize;
+    border-radius: 100px;
+    padding: 12px 30px;
+    transition: all 0.3s ease-in-out;
+    &.white{
+        background-color: #fff;
+        color: var(--secondary-color);
+        border: 1px solid #fff;
+        &:hover{
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    &.black{
+        background-color: var(--secondary-color);
+        color: #fff;
+        border: 1px solid var(--secondary-color);
+        &:hover{
+            background-color: transparent;
+            color: var(--secondary-color);
+            border: 1px solid var(--secondary-color);
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+section{
+    padding: 80px 0;
+}
