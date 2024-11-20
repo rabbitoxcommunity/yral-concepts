@@ -1,10 +1,11 @@
 .yral__homeBanner {
-    margin-top: 120px;
-    .slick-dots{
+    .slick-dots {
         bottom: 20px;
-        li{
+
+        li {
             margin: 0;
-            button:before{
+
+            button:before {
                 font-size: 15px;
             }
         }
@@ -14,9 +15,14 @@
         background-color: #aecaa1;
         border-radius: 30px;
 
+
         .contents {
             padding: 100px;
             padding-right: 20px;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
 
             h1 {
                 font-weight: 600;
@@ -31,6 +37,12 @@
 
             p {
                 margin: 15px 0;
+                -webkit-line-clamp: 2;
+                line-clamp: 2;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
 
             .explore {
@@ -45,6 +57,7 @@
         .image {
             text-align: right;
             padding: 40px;
+
             img {
                 width: 100%;
             }
@@ -54,6 +67,7 @@
 
 .trending__products {
     padding-bottom: 100px;
+
     .trending {
         background-color: var(--secondary-color);
         padding: 30px;
@@ -61,7 +75,8 @@
         position: relative;
         overflow: hidden;
         min-height: 344px;
-        h2{
+
+        h2 {
             color: #fff;
             font-size: 40px;
             font-weight: 500;
@@ -71,21 +86,22 @@
 
         img.main {
             width: 100%;
-            height: 200px;
+            height: 240px;
             object-fit: contain;
             position: absolute;
             left: -90px;
-            bottom: -30px;
+            bottom: -40px;
         }
-        .more__products{
+
+        .more__products {
             position: absolute;
             right: 30px;
             bottom: 20px;
             transform: rotate(-45deg);
             color: #fff;
             z-index: 9;
-            
-            svg{
+
+            svg {
                 height: 50px;
                 width: 50px;
             }
@@ -99,31 +115,43 @@
         border: 1px solid #fff;
         transition: all 0.2s ease-in;
         min-height: 344px;
-        .image{
+        border: 1px solid #e3e3e3;
+
+        .image {
             overflow: hidden;
             margin-bottom: 20px;
             border-radius: 30px;
-            img{
+
+            img {
                 width: 100%;
                 height: 200px;
                 object-fit: contain;
-                background-color: #e3e3e3;
                 transition: all 0.3s ease-in;
             }
         }
-        &:hover{
-            border: 1px solid #e3e3e3;
+
+        &:hover {
+
             cursor: pointer;
             transition: all 0.2s ease-in;
-            h3{
-                color: var(--primary-color);
+            // border: 1px solid var(--primary-color);
+
+
+            h3 {
+                // color: var(--primary-color);
                 transition: all 0.2s ease-in;
             }
-            .image{
-                img{
+
+            .image {
+                img {
                     transform: scale(1.1) rotate(1deg);
                     transition: all 0.2s ease-in;
                 }
+            }
+
+            .buy p {
+                background-color: var(--primary-color);
+                transition: all 0.2s ease-in;
             }
         }
 
@@ -143,7 +171,8 @@
             margin-top: 20px;
             justify-content: space-between;
             padding: 0 5px;
-            p{
+
+            p {
                 margin: 0;
                 font-size: 12px;
                 font-weight: 300;
@@ -151,6 +180,7 @@
                 background: var(--secondary-color);
                 padding: 5px 16px;
                 border-radius: 100px;
+                transition: all 0.2s ease-in;
             }
 
             .whatsapp {
@@ -162,7 +192,12 @@
                 align-items: center;
                 justify-content: center;
                 border-radius: 100px;
-                svg{
+
+                img {
+                    height: 19px;
+                }
+
+                svg {
                     background-color: transparent;
                     width: 25px;
                     height: 25px;
@@ -175,31 +210,35 @@
     }
 }
 
-.yral__about{
-    h2{
+.yral__about {
+    h2 {
         font-size: 45px;
         font-weight: 600;
         margin-top: 10px;
     }
-    h5{
+
+    h5 {
         font-size: 14px;
         display: inline-block;
         color: #fff;
         padding: 6px 20px;
-        border-radius: 100px;    
+        border-radius: 100px;
     }
-    p{
+
+    p {
         font-size: 14px;
         margin-bottom: 0;
         margin-top: 20px;
     }
 }
 
-.ecofriendly__products{
+.ecofriendly__products {
     background-color: #0d594d;
     overflow: hidden;
     position: relative;
-    img.bg{
+    padding: 0;
+
+    img.bg {
         position: absolute;
         left: -20%;
         bottom: 0;
@@ -207,29 +246,339 @@
         z-index: 0;
         opacity: .2;
     }
-    img.ekota-bg{
+
+    img.ekota-bg {
         position: relative;
         z-index: 9;
     }
-    img.logo{
+
+    img.logo {
         width: 200px;
         margin-bottom: 10px;
     }
-    .contents{
+
+    .contents {
         width: 90%;
         margin: 0 auto;
-        h2{
+
+        h2 {
             color: #fff;
             font-size: 50px;
             font-weight: 600;
             line-height: 1.1;
             margin-bottom: 20px;
         }
-        p{
+
+        p {
             color: #fff;
             font-weight: 300;
             font-size: 14px;
             margin-bottom: 25px;
+        }
+    }
+}
+
+.yral_products {
+    .products {
+        margin-top: 50px;
+        text-align: center;
+        padding: 30px;
+        // background-color: rgb(227 227 227 / 50%);
+        // box-shadow: rgb(0 0 0 / 9%) 0px 0px 0px 1px;
+        border-radius: 30px;
+        cursor: pointer;
+        background: #00212e;
+        color: #fff;
+        img {
+            height: 95px;
+            width: 60%;
+            object-fit: contain;
+            margin-bottom: 20px;
+            padding-top: 20px;
+            transition: all 0.3s ease-in;
+            filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7474%) hue-rotate(7deg) brightness(101%) contrast(95%);
+        }
+
+        h2 {
+            font-size: 22px;
+            margin-bottom: 7px;
+            
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 10px;
+            opacity: .6;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            margin: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+        button {
+            margin-top: 20px;
+            opacity: 1;
+            transition: all 0.3s ease-in;
+            background-color: #fff !important;
+            color: #323232 !important;
+            border: 1px solid #e3e3e3 !important;
+            font-size: 12px;
+        }
+
+        &:hover {
+            button {
+                opacity: 1;
+                transition: all 0.3s ease-in;
+                background-color: var(--secondary-color) !important;
+                border: 1px solid var(--secondary-color);
+                color: #fff !important;
+            }
+
+            img {
+                transform: scale(1.105);
+                transition: all 0.3s ease-in;
+            }
+        }
+    }
+}
+
+.yral__partners {
+
+    img.partner-logo {
+        width: 80%;
+        margin-top: 40px;
+        object-fit: contain;
+        height: 44px;
+    }
+
+    .slick-slider {
+        mask-image: linear-gradient(to right, transparent 0, #000 20%, #000 80%, transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0, #000 20%, #000 80%, transparent 100%);
+    }
+}
+
+.yral_contact {
+    img.main {
+        height: 70vh;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+}
+
+.contact__form {
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+    label {
+        font-size: 13px;
+        margin-bottom: 5px;
+        opacity: .8;
+    }
+
+    .form-control {
+        border-radius: 10px;
+        padding: 12px 20px;
+        margin-bottom: 10px;
+        font-size: 14px;
+
+        &:focus {
+            border: 1px solid var(--primary-color);
+            outline: none;
+            box-shadow: none;
+        }
+    }
+
+    button {
+        margin-top: 20px;
+    }
+}
+
+// ABOUT US INNER PAGE
+
+.innerpage_About {
+    // background-color: rgb(125, 191, 66, 0.1);
+
+    .breadcrumb {
+        margin-top: 20px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            gap: 30px;
+
+            li {
+                position: relative;
+                opacity: .8;
+
+                a.active {
+                    color: var(--primary-color);
+                }
+
+                &::after {
+                    content: "/";
+                    right: -20px;
+                    font-size: 11px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .counter {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-around;
+
+        .count {
+            span {
+                font-size: 65px;
+                font-weight: 600;
+                line-height: 1.1;
+            }
+
+            p {
+                margin: 0;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.about__videoSection {
+    position: relative;
+    display: block;
+
+    video {
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        background-size: cover;
+        position: relative;
+        display: block;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.6433167016806722) 0%, rgba(0, 0, 0, 1) 200%);
+        width: 100%;
+        height: 100%;
+    }
+
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-85%, -50%);
+        z-index: 99;
+        width: 50%;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        p {
+            margin: 0;
+            font-size: 16px;
+            color: #ffff;
+            line-height: 1.7;
+            margin-top: 15px;
+            font-weight: 300;
+        }
+    }
+}
+
+// WHY CHOOSE US
+.whyChooseUs {
+    .col {
+        padding-right: 0;
+    }
+
+    p.main-desc {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+    .why__choose {
+        padding: 40px;
+        margin-top: 50px;
+        border: 1px solid #e3e3e3;
+        border-radius: 30px;
+        min-height: 300px;
+
+        img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+           
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 10px;
+            font-size: 13px;
+            color: grey;
+        }
+    }
+}
+
+// CONTACT
+
+.contactGrid{
+    border: 1px solid #e3e3e3;
+    padding: 80px 40px;
+    border-radius: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    .contactInfo{
+        border-right: 1px solid #e3e3e3;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 40px;
+        img{
+            width: 30px;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+        h4{
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-bottom: 0px;
+        }
+        p{
+            color: grey;
+            margin-top: 10px;
         }
     }
 }
