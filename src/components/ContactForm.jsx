@@ -18,7 +18,7 @@ export default function ContactForm() {
               <div className="col-md-5">
                 <div className="contact__form" data-aos="fade-up" data-aos-duration="2000">
                   <div className="row">
-                    <div className="col-md-">
+                    <div className="col-md-6 pe-0">
                       <label htmlFor="">First Name</label>
                       <input type="text" className='form-control' placeholder='First Name' />
                     </div>
@@ -26,7 +26,7 @@ export default function ContactForm() {
                       <label htmlFor="">Last Name</label>
                       <input type="text" className='form-control' placeholder='Last Name' />
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-12">
                       <label htmlFor="">Email</label>
                       <input type="text" className='form-control' placeholder='Email' />
                     </div>
