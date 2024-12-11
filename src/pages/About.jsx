@@ -21,13 +21,13 @@ export default function About() {
               <div className="counter" data-aos="fade-up" data-aos-duration="2000">
                 <div className="count">
                   <div>
-                    <CountUp start={0} end={100} duration={5} /><span>+</span>
+                    <CountUp start={0} end={100} duration={1} /><span>+</span>
                   </div>
                   <p>Quality Products</p>
                 </div>
                 <div className="count">
                   <div>
-                    <CountUp start={0} end={1000} duration={5} /><span>+</span>
+                    <CountUp start={0} end={1000} duration={1} /><span>+</span>
                   </div>
                   <p>Happy Customers</p>
                 </div>
@@ -61,28 +61,28 @@ export default function About() {
             </div>
           </div>
           <div className="row row-cols-4">
-            <div className="col">
+            <div className="col sm-12 tab-6">
               <div className="why__choose" data-aos="fade-up" data-aos-duration="1500">
                 <img src="/assets/icons/eco-friendly.svg" alt="" />
                 <h3>Eco-Friendly Commitment</h3>
                 <p>Our bowls and plates are crafted from 100% natural areca leaves and wood, ensuring they are biodegradable, sustainable, and safe for the environment.</p>
               </div>
             </div>
-            <div className="col">
+            <div className="col sm-12 tab-6">
               <div className="why__choose" data-aos="fade-up" data-aos-duration="2000">
                 <img src="/assets/icons/quality.svg" alt="" />
                 <h3>Superior Quality</h3>
                 <p>From durable dispensers to versatile cleaning tools, we deliver products built to last and perform effectively.</p>
               </div>
             </div>
-            <div className="col">
+            <div className="col sm-12 tab-6">
               <div className="why__choose" data-aos="fade-up" data-aos-duration="2500">
                 <img src="/assets/icons/cleaning.svg" alt="" />
                 <h3>Comprehensive Range</h3>
                 <p>We offer a wide selection of cleaning products, tissues, Jumbo Toilet Roll Dispensers, and other essentials to suit residential, commercial, and industrial requirements.</p>
               </div>
             </div>
-            <div className="col">
+            <div className="col sm-12 tab-6">
               <div className="why__choose" data-aos="fade-up" data-aos-duration="3000">
                 <img src="/assets/icons/price.svg" style={{width: '48px'}} alt="" />
                 <h3>Affordable Pricing</h3>

@@ -9,6 +9,7 @@
 
 body {
     font-family: var(--font2);
+    // overflow: hidden;
 }
 
 h1,
@@ -22,7 +23,8 @@ a {
     text-decoration: none;
     color: inherit;
 }
-.gradient{
+
+.gradient {
     background: rgb(141, 197, 65);
     background: linear-gradient(45deg, rgb(141, 197, 65) 0%, rgb(24, 157, 73) 99%);
 }
@@ -33,22 +35,26 @@ a {
     border-radius: 100px;
     padding: 12px 30px;
     transition: all 0.3s ease-in-out;
-    &.green{
+
+    &.green {
         background-color: var(--primary-color);
         color: #fff;
         border: 1px solid var(--primary-color);
-        &:hover{
+
+        &:hover {
             background-color: transparent;
             color: var(--primary-color);
             border: 1px solid var(--primary-color);
             transition: all 0.3s ease-in-out;
         }
     }
-    &.black{
+
+    &.black {
         background-color: var(--secondary-color);
         color: #fff;
         border: 1px solid var(--secondary-color);
-        &:hover{
+
+        &:hover {
             background-color: transparent;
             color: var(--secondary-color);
             border: 1px solid var(--secondary-color);
@@ -57,6 +63,12 @@ a {
     }
 }
 
-section{
+section {
     padding: 80px 0;
+}
+
+.slick-slider {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }

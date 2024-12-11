@@ -199,25 +199,24 @@
         display: none;
         list-style: none;
         position: absolute;
-        inset: 60px 20px 20px 20px;
-        padding: 10px 0;
+        inset: 0;
+        padding: 70px 10px;
         margin: 0;
-        border-radius: 6px;
-        background-color: var(--nav-mobile-background-color);
-        border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+        background-color: var(--primary-color);
         box-shadow: none;
         overflow-y: auto;
         transition: 0.3s;
         z-index: 9998;
+        width: 60%;
     }
 
     .navmenu a,
     .navmenu a:focus {
-        color: var(--nav-dropdown-color);
-        padding: 10px 20px;
+        color: #000;
+        padding: 12px 20px;
         font-family: var(--nav-font);
         font-size: 17px;
-        font-weight: 500;
+        font-weight: 400;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -237,24 +236,24 @@
         justify-content: center;
         border-radius: 50%;
         transition: 0.3s;
-        background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
+        background-color: color-mix(in srgb, var(--primary-color), transparent 90%);
     }
 
     .navmenu a i:hover,
     .navmenu a:focus i:hover {
-        background-color: var(--accent-color);
+        background-color: var(--primary-color);
         color: var(--contrast-color);
     }
 
     .navmenu a:hover,
     .navmenu .active,
     .navmenu .active:focus {
-        color: var(--nav-dropdown-hover-color);
+        color: #fff;
     }
 
     .navmenu .active i,
     .navmenu .active:focus i {
-        background-color: var(--accent-color);
+        background-color: var(--primary-color);
         color: var(--contrast-color);
         transform: rotate(180deg);
     }
@@ -285,7 +284,7 @@
     .mobile-nav-active .mobile-nav-toggle {
         color: #fff;
         position: absolute;
-        font-size: 32px;
+        font-size: 45px;
         top: 15px;
         right: 15px;
         margin-right: 0;

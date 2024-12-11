@@ -6,6 +6,8 @@ import { config_partners, home_banner } from '../config/config'
 import Slider from 'react-slick'
 import { MdOutlineShoppingCart } from 'react-icons/md'
 import ContactForm from '../components/ContactForm'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
 
@@ -40,7 +42,7 @@ export default function Home() {
           <Slider {...home_banner}>
             <div>
               <div className="bannerItem">
-                <div className="row align-items-center">
+                <div className="row align-items-center sm-reverse">
                   <div className="col-md-6">
                     <div className="contents">
                       <h1 data-aos="fade-up" data-aos-duration="1000">Sustainable and
@@ -65,7 +67,7 @@ export default function Home() {
             </div>
             <div>
               <div className="bannerItem">
-                <div className="row align-items-center">
+                <div className="row align-items-center sm-reverse">
                   <div className="col-md-6">
                     <div className="contents">
                       <h1 data-aos="fade-up" data-aos-duration="1000">High-quality tissue products designed
@@ -116,8 +118,16 @@ export default function Home() {
       </section>
       <section className="trending__products">
         <div className="container">
+          {/* <div className="row">
+            <div className="col-12">
+            <div className="view__more">
+                <p>View More</p>
+                <img src="/assets/icons/arrow-right.svg" alt="" />
+              </div>
+            </div>
+          </div> */}
           <div className="row row-cols-4">
-            <div className="col">
+            <div className="col sm-12 tab-6">
               <div className="trending" data-aos="fade-up" data-aos-duration="1000">
                 <h2>Trending Products</h2>
                 <img className='main' src="/assets/img/products/HYGIA2.png" alt="" />
@@ -128,12 +138,12 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="col">
+            <div className="col sm-12 tab-6">
               <div className="productGrid" data-aos="fade-up" data-aos-duration="1500">
                 <div className="image">
-                  <img src="/assets/img/products/IZZAH2.png" alt="" />
+                  <img src="/assets/img/products/p11.jpg" style={{height:"220px"}} alt="" />
                 </div>
-                <h3>Maxi Roll Dispenser, Folded Hand Towel Dispenser, Jumbo Toilet Roll Dispenser, Automatic Freshener</h3>
+                <h3>DISH WASHING LIQUID</h3>
                 <div className="buy">
                   <p>View Products</p>
                   <div className="whatsapp">
@@ -142,13 +152,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col sm-12 tab-6">
               <div className="productGrid" data-aos="fade-up" data-aos-duration="2000">
                 <div className="image">
-                  <img src="/assets/img/products/BIIOSOLVE2.png" alt="" />
+                  <img src="/assets/img/products/p2.jpg" alt="" />
                 </div>
-                <h3>Durable plastic and steel dustbins
-                  designed for long-lasting performance</h3>
+                <h3>Automatic Soap Dispenser</h3>
                 <div className="buy">
                   <p>View Products</p>
                   <div className="whatsapp">
@@ -157,12 +166,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col">
+            <div className="col sm-12 tab-6">
               <div className="productGrid" data-aos="fade-up" data-aos-duration="2500">
                 <div className="image">
-                  <img src="/assets/img/products/EKOTA2.png" alt="" />
+                  <img src="/assets/img/products/p6.jpg" alt="" />
                 </div>
-                <h3>Disinfectant, Drain Opener, Carpet Shampo and All Purpose Cleaner</h3>
+                <h3>Plastic Waste Basket</h3>
                 <div className="buy">
                   <p>View Products</p>
                   <div className="whatsapp">
@@ -205,12 +214,11 @@ export default function Home() {
                 wide range of products.</h2>
             </div>
           </div>
-          <div className="row">
             <div className="row row-cols-4">
               {
                 products?.map((ele, i) => {
                   return (
-                    <div className="col" data-aos="fade-up" data-aos-duration={`${i+1}000`}>
+                    <div className="col sm-12 tab-6" data-aos="fade-up" data-aos-duration={`${i+1}000`}>
                       <div className="products">
                         <img src={ele.img} alt="" />
                         <h2>{ele?.title}</h2>
@@ -223,7 +231,6 @@ export default function Home() {
               }
 
             </div>
-          </div>
         </div>
       </section>
       <section className="yral__about yral__partners">

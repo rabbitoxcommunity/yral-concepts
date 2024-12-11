@@ -8,7 +8,7 @@ export default function Footer() {
     <div className='yral__footer'>
       <div className="container">
         <div className="row justify-content-between">
-          <div className="col-md-3">
+          <div className="col-md-3 tab-4">
             <div className="logo">
               <img src="/assets/img/logo.svg" alt="" />
               <p>we believe that every challenge presents an opportunity to innovate. Our mission is to simplify your life by providing practical, creative, and sustainable solutions to the problems you face daily.</p>
@@ -16,7 +16,7 @@ export default function Footer() {
           </div>
           <div className="col-md-6">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4 tab-6">
                 <div className="footer__widgets">
                   <h4>Quick Links</h4>
                   <ul>
@@ -27,7 +27,7 @@ export default function Footer() {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 tab-6">
                 <div className="footer__widgets">
                   <h4>Products</h4>
                   <ul>
@@ -38,7 +38,7 @@ export default function Footer() {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 tab-6">
                 <div className="footer__widgets">
                   <h4>Socials</h4>
                   <ul className='social'>

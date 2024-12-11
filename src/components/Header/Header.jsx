@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import './Header.scss';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +25,24 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+      document.body.classList.remove('mobile-nav-active');
+    }
+  }, [location.pathname]);
+
+  const handleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+    const body = document.body;
+    if (!isMenuOpen) {
+      body.classList.add('mobile-nav-active');
+    } else {
+      body.classList.remove('mobile-nav-active');
+    }
+  };
   return (
     <header
       id="header"
@@ -33,21 +54,17 @@ const Header = () => {
           <img src="/assets/img/logo.svg" alt="" />
         </Link>
 
-        <nav id="navmenu" className="navmenu">
+        <nav id="navmenu" className={`navmenu`}>
           <ul>
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to="/about">About Us</NavLink></li>
-            <li className="dropdown"><a href="#"><span>Products</span> <i className="bi bi-chevron-down toggle-dropdown"></i></a>
-              <ul>
-                <li><NavLink to="/">Hygia</NavLink></li>
-                <li><NavLink to="/">Biosolve</NavLink></li>
-                <li><NavLink to="/">Ekota</NavLink></li>
-                <li><NavLink to="/">Izzah</NavLink></li>
-              </ul>
-            </li>
+            <li><NavLink to="/products">Products</NavLink></li>
             <li><NavLink to="/contact">Contact Us</NavLink></li>
           </ul>
-          <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>
+          {
+            !isMenuOpen ? <img className='mobile-nav-toggle d-xl-none' height={40} src='/assets/icons/menu.svg' onClick={handleMenu}/> : <i className={`mobile-nav-toggle d-xl-none bi ${!isMenuOpen ? "bi-list" : 'bi-x'}`} onClick={handleMenu}></i>
+          }
+          
         </nav>
 
       </div>

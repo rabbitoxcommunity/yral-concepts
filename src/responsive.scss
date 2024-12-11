@@ -1,0 +1,360 @@
+
+@media only screen and (max-width: 600px){
+    .sm-12{
+        width: 100%;
+    }
+    .sm-6{
+        width: 50%;
+    }
+    .header .logo img {
+        width: 160px;
+    }
+    .sm-reverse {
+        flex-direction: column-reverse;
+    }
+    .yral__homeBanner{
+        .bannerItem{
+            .contents{
+                padding: 40px 30px;
+                padding-top: 0;
+                height: auto;
+                .btn.btn-primary{
+                    padding: 10px 20px;
+                }
+                h1{
+                    font-size: 32px;
+                }
+                p{
+                    font-size: 14px;
+                    margin: 0;
+                }
+                .explore{
+                    gap: 10px;
+                }
+            }
+            .image{
+                padding: 20px;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+        .slick-dots{
+            bottom: 10px;
+        }
+    }
+    .yral__about{
+        h2{
+            font-size: 28px;
+        }
+    }
+    .trending__products{
+        padding-top: 0;
+        padding-bottom: 30px;
+        .trending, .productGrid{
+            margin-bottom: 20px;
+        }
+        .productGrid{
+            padding: 40px;
+        }
+    }
+    .ecofriendly__products{
+        padding-bottom: 60px;
+        .contents{
+            h2{
+                font-size: 34px;
+            }
+        }
+    }
+    .yral_products{
+        .products{
+            margin-top: 20px;
+        }
+    }
+    section.yral__about.yral__partners{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .yral_contact img.main{
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    .yral__footer{
+        padding: 60px 20px;
+        padding-bottom: 0;
+        .footer__widgets{
+            padding-top: 20px;
+        }
+    }
+    .contact__form{
+        padding: 30px;
+    }
+    .yral__partners{
+        img.partner-logo{
+            margin-top: 0;
+        }
+    }
+    .innerpage_About .counter{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .innerpage_About{
+        padding: 30px;
+    }
+    .about__videoSection .content{
+        width: 80%;
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        z-index: 99;
+    }
+    .product__listing .filters, .advanced__filter {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .contactGrid{
+        width: 100%;
+        padding-bottom: 30px;
+        .contactInfo{
+            padding: 0;
+            margin-bottom: 40px;
+            border: none;
+        }
+    }
+  }
+  
+  /* Small devices (phones, landscape) */
+  @media only screen and (max-width: 768px) {
+    .tab-12{
+        width: 100%;
+    }
+    .tab-6{
+        width: 50%;
+    }
+    .tab-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .tab-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+    .tab-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+    .header {
+        padding: 35px 15px;
+        &.scrolled{
+            padding: 20px 15px;
+        }
+    }
+    .productGrid{
+        margin-bottom: 20px;
+    }
+    .yral__homeBanner{
+        
+        .bannerItem{
+            padding: 50px;
+            .contents{
+                padding: 0px;
+                padding-top: 0;
+                height: auto;
+                .btn.btn-primary{
+                    padding: 10px 20px;
+                }
+                h1{
+                    font-size: 32px;
+                }
+                p{
+                    font-size: 14px;
+                    margin: 0;
+                }
+                .explore{
+                    gap: 10px;
+                } 
+            }
+            .image{
+                padding: 0;
+            }
+        }
+    }
+    .yral__about h2{
+        font-size: 34px;
+    }
+    .ecofriendly__products{
+        padding: 60px 0;
+        .contents h2{
+            font-size: 32px;
+        }
+    }
+    .yral_contact img.main{
+        height: 54vh;
+    }
+    .innerpage_About .counter{
+        flex-direction: column;
+        align-items: start;
+        .count span {
+            font-size: 45px;
+        }
+    }
+    .about__videoSection{
+      video{
+        height: 50vh;
+      }
+        .content {
+            left: 70%;
+            width: 70%;
+        }
+    }
+    .whyChooseUs .why__choose{
+        margin-top: 20px;
+    }
+
+    section.yral__about.innerpage_About.product__page {
+        padding: 30px 0;
+    }
+    .productGrid{
+        min-height: 294px;
+        .image img{
+            height: 160px;
+        }
+    }
+    .contactGrid{
+        width: 100%;
+        .contactInfo{
+            padding-left: 0;
+        }
+    }
+    .yral__footer {
+        .col-md-4.tab-6:last-of-type {
+          .footer__widgets {
+            h4 {
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+  }
+  
+  /* Medium devices (tablets) */
+  @media only screen and (max-width: 1024px) {
+    .tab-12{
+        width: 100%;
+    }
+    .tab-6{
+        width: 50%;
+    }
+    .tab-3 {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+    .tab-4 {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+    .tab-9 {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+    .header {
+        padding: 35px 15px;
+        &.scrolled{
+            padding: 20px 15px;
+        }
+    }
+    .productGrid{
+        margin-bottom: 20px;
+    }
+    .yral__homeBanner{
+        
+        .bannerItem{
+            padding: 50px;
+            .contents{
+                padding: 0px;
+                padding-top: 0;
+                height: auto;
+                .btn.btn-primary{
+                    padding: 10px 20px;
+                }
+                h1{
+                    font-size: 32px;
+                }
+                p{
+                    font-size: 14px;
+                    margin: 0;
+                }
+                .explore{
+                    gap: 10px;
+                } 
+            }
+            .image{
+                padding: 0;
+            }
+        }
+    }
+    .yral__about h2{
+        font-size: 34px;
+    }
+    .ecofriendly__products{
+        padding: 60px 0;
+        .contents h2{
+            font-size: 32px;
+        }
+    }
+    .yral_contact img.main{
+        height: 47vh;
+    }
+    .innerpage_About .counter{
+        flex-direction: column;
+        align-items: start;
+        .count span {
+            font-size: 45px;
+        }
+    }
+    .about__videoSection{
+      video{
+        height: 50vh;
+      }
+        .content {
+            left: 70%;
+            width: 70%;
+        }
+    }
+    .whyChooseUs .why__choose{
+        margin-top: 20px;
+    }
+
+    section.yral__about.innerpage_About.product__page {
+        padding: 30px 0;
+    }
+    .productGrid{
+        min-height: 294px;
+        .image img{
+            height: 160px;
+        }
+    }
+    .contactGrid{
+        width: 100%;
+        .contactInfo{
+            padding-left: 0;
+        }
+    }
+    .yral__footer {
+        .col-md-4.tab-6:last-of-type {
+          .footer__widgets {
+            h4 {
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+  }
+  
+  /* Large devices (desktops) */
+  @media only screen and (min-width: 1025px) {
+  
+  }
+  
